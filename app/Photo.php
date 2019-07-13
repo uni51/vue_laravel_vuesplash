@@ -21,7 +21,10 @@ class Photo extends Model
      /** JSONに含める属性 */
      protected $visible = [
         'id', 'owner', 'url',
-    ];   
+    ];
+    
+     /** 1ページあたりのアイテム数 */   
+    protected $perPage = 6;
 
     public function __construct(array $attributes = [])
     {
